@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block title %}Movie Info{% endblock %}
+
+{{ super() }}
+{% block content %}
+    <div class="container">
+        <div id="movie" class="card card-body bg-light">
+
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script>
+        getMovie();
+    </script>
+{% endblock %}
